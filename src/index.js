@@ -26,7 +26,7 @@ Object.defineProperty(school, 'aGradeStudents', {
        const studentsArray = Object.values(this.students);
        const studArrAverageGrade = studentsArray.filter((value) => 100 >= value.averageGrade && value.averageGrade >= 90);
        const studName = studArrAverageGrade.map((value) => value.name);
-       return studName.join(',');
+       return studName.join(', ');
     }
 });
 
@@ -35,7 +35,7 @@ Object.defineProperty(school, 'bGradeStudents', {
         const studentsArray = Object.values(this.students);
         const studArrAverageGrade = studentsArray.filter((value) => 89 >= value.averageGrade && value.averageGrade >= 75);
         const studName = studArrAverageGrade.map((value) => value.name);
-        return studName.join(',');
+        return studName.join(', ');
     }
 });
 
@@ -44,7 +44,7 @@ Object.defineProperty(school, 'cGradeStudents', {
         const studentsArray = Object.values(this.students);
         const studArrAverageGrade = studentsArray.filter((value) => 75 >= value.averageGrade && value.averageGrade >= 60);
         const studName = studArrAverageGrade.map((value) => value.name);
-        return studName.join(',');
+        return studName.join(', ');
     }
 });
 
@@ -53,6 +53,6 @@ Object.defineProperty(school, 'dGradeStudents', {
         const studentsArray = Object.values(this.students);
         const studArrAverageGrade = studentsArray.filter((value) => 59 >= value.averageGrade && value.averageGrade >= 0);
         const studName = studArrAverageGrade.map((value) => value.name);
-        return studName.join(',');
+        return studName.join(', ');
     }
 });
